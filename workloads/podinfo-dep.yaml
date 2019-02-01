@@ -25,12 +25,6 @@ spec:
       labels:
         app: podinfo
     spec:
-      initContainers:
-      - name: init
-        image: alpine:3.5
-        command:
-        - sleep
-        - "1"
       containers:
       - name: hooks
         image: aalpgiray/hooks:v1
@@ -46,18 +40,4 @@ spec:
         env:
         - name: PODINFO_UI_COLOR
           value: black
-        livenessProbe:
-          httpGet:
-            path: /
-            port: 1234
-        readinessProbe:
-          httpGet:
-            path: /
-            port: 1234
-        resources:
-          limits:
-            cpu: 1000m
-            memory: 128Mi
-          requests:
-            cpu: 10m
-            memory: 64Mi
+  
