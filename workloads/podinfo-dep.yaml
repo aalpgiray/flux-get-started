@@ -40,11 +40,9 @@ spec:
           name: http
           protocol: TCP
         command:
-        - ./podinfo
-        - --port=1234
-        - --level=info
-        - --random-delay=false
-        - --random-error=false
+        - npm
+        - run
+        - start
         env:
         - name: PODINFO_UI_COLOR
           value: black
