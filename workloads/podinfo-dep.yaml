@@ -48,11 +48,11 @@ spec:
           value: black
         livenessProbe:
           httpGet:
-            path: /healthz
+            path: /
             port: 1234
         readinessProbe:
           httpGet:
-            path: /readyz
+            path: /
             port: 1234
         resources:
           limits:
