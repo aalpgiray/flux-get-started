@@ -32,8 +32,8 @@ spec:
         - sleep
         - "1"
       containers:
-      - name: podinfod
-        image: aalpgiray/hooks
+      - name: hooks
+        image: aalpgiray/hooks:v1
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 1234
