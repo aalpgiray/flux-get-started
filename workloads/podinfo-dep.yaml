@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
       - name: hooks
-        image: aalpgiray/hooks:v1
+        image: aalpgiray/hooks:v2
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 1234
@@ -40,4 +40,4 @@ spec:
         env:
         - name: PODINFO_UI_COLOR
           value: black
-  
+
