@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
       - name: hooks
-        image: aalpgiray/hooks:latest
+        image: aalpgiray/hooks:v4
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 1234
